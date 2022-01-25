@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <div id="navbar">
-                <a href="psl.html"><img src="images/Lengva-sija-Baltas.png" height="50" width="280"></a>
-                <a href="#Apie įmonę">APIE ĮMONĘ</a>
-                <a href="#paslaugos">PASLAUGOS</a>
-                <a href="#Kontaktai">KONTAKTAI</a>
-                <a href="#Mūsų projektai">MŪSŲ PROJEKTAI</a>
-                <a href="#Karjera">KARJERA</a>
-            </div>
-            <i class="fa fa-bars" onckick="showMenu()"></i>
-        </nav>
+    <div class="navbar">
+        <img src="images/Lengva-sija-Baltas.png">
+        <ul>
+            <li><a href="#">APIE ĮMONĘ</a></li>
+            <li><a href="#">PASLAUGOS</a></li>
+            <li><a href="#">KONTAKTAI</a></li> 
+            <li><a href="#">MŪSŲ PROJEKTAI</a></li>
+            <li><a href="#">KARJERA</a></li>
+        </ul>
+    </div>
+    <section class="header">  >
         <div class="text-box">
             <h1>Statinių Konstrukcijų Projektavimo Darbai</h1>
             <p>Mes sėkmingai vykdome veiklą jau:  <br> </p>
@@ -119,7 +118,6 @@
     </div>
 
 
-    <!--JavaScript for Menu-->
     <script>
 
         var navLinks = document.getElementById("navLinks");
@@ -130,19 +128,6 @@
             navLinks.style.right = "-200px";
         }
 
-    </script>
-    <script>
-        window.onscroll = function () { myFunction() };
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-            }
-            else {
-                navbar.classList.remove("sticky");
-            }
-        }
     </script>
 </body>
 </html>
