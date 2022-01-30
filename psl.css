@@ -123,27 +123,20 @@ nav .fa{
     padding-right: 5%;
 }
 .eilute {
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
 }
 .ivadas-1 {
     height: 100px;
     width: 40%;
-    background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.60));
-    background-position: center; 
+    background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
+    background-position: center;
     padding: 200px 10px;
     margin-bottom: 10%;
-    margin-left: 0.4%;
-    font-family: 'Roboto Slab', sans-serif;
+    margin-left: 0%;
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
-}
-.ivadas-2 {
-    display: inline-block;
-    background: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.60));
-    height: 500px;
-    width: 59.25%;
 }
 .ivadas-2 img{
     position: relative;
@@ -168,7 +161,118 @@ nav .fa{
     transition: .5s;
 }
     .row li:hover {
-        color: #e24902;
-        border: 3px solid #e24902;
+        color: #fb801f;
+        border: 3px solid #fb801f;
         padding: 30px 30px;
     }
+.Planuokis {
+    height: 100vh;
+    background-size: 1550px;
+    background-image: url(images/shutterstock_1182038062.jpg);
+    background-repeat: no-repeat;
+}
+.tekstas-1 h1 {
+    font-size: 30px;
+    text-align: justify;
+    position: center;
+    margin-left: 57%;
+    margin-right: 5%;
+    color: #ffffff;
+    padding-top: 13%;
+}
+.tekstas-1 p {
+    text-align: justify;
+    position: center;
+    margin-left: 55%;
+    margin-right: 5%;
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 18px;
+    padding-top: 1%;
+}
+.eilute-1 {
+    display: flex;
+}
+.Konsultuokis h1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: right;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    margin-top: -7%;
+}
+.tekstas-2 {
+    height: 100px;
+    width: 40%;
+    background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
+    background-position: center;
+    padding: 200px 10px;
+    margin-left: 0%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.photo-1 {
+    float: right;
+    position: relative;
+    display: block;
+}
+.img-slider {
+    position: relative;
+    margin: 10px;
+    margin-top: 10%;
+    margin-left: 15%;
+}    
+.img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    clip-path: circle(0% at 0 50%);
+}
+.img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.img-slider .slide img {
+    z-index: 1;
+    background: rgb(39 52 98 / 0.50)
+}
+.img-slider .slide .tekstas-3{
+    position: absolute;
+    top: 0;
+    text-align: justify;
+}
+.img-slider .slide .tekstas-3 h1 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.img-slider .slide .tekstas-3 p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 70px;
+    padding-top: 1%;
+}
+.img-slider .navigation {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-bottom: 1%;
+    padding-top: 43%;
+    left: 44%;
+    transform: translateX(-50%);
+}
+.img-slider .navigation .btn {
+    background: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+.img-slider .navigation .btn.active {
+    background: #008bff;
+    box-shadow:0 0 2px rgb(15 28 72 / 0.70);
+}
