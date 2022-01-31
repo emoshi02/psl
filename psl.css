@@ -9,7 +9,9 @@
     background-image: linear-gradient(rgb(192 198 213), rgb(39 52 98 / 0.70)),url(images/1.png);
     position: inherit;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -19,6 +21,7 @@
     top: 0;
     width: 100%;
     z-index: 2;
+    display: inline;
 }
 
 
@@ -88,30 +91,9 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
-    .text-box h1 {
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links {
-        position: absolute;
-        background: #008bff;
-        height: 100vh;
-        width: 200vh;
-        top: 0;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-        transition: 0.5s;
-    }
-    nav .fa{
-        display: block;
-        color: #ffffff;
-        margin: 10px auto;
-        font-size: 22px;
-        cursor: pointer;
+@media screen and (max-width: 1130px){
+    .navbar {
+        display: none;
     }
 }
 .apie-imone h1{
@@ -128,9 +110,8 @@ nav .fa{
 }
 .ivadas-1 {
     height: 100px;
-    width: 40%;
+    width: 100%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
-    background-position: center;
     padding: 200px 10px;
     margin-bottom: 10%;
     margin-left: 0%;
@@ -166,8 +147,8 @@ nav .fa{
         padding: 30px 30px;
     }
 .Planuokis {
-    height: 100vh;
-    background-size: 1550px;
+    width: 100%;
+    height:600px;
     background-image: url(images/shutterstock_1182038062.jpg);
     background-repeat: no-repeat;
 }
@@ -178,7 +159,6 @@ nav .fa{
     margin-left: 57%;
     margin-right: 5%;
     color: #ffffff;
-    padding-top: 13%;
 }
 .tekstas-1 p {
     text-align: justify;
@@ -203,9 +183,8 @@ nav .fa{
 }
 .tekstas-2 {
     height: 100px;
-    width: 40%;
+    width: 100%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
-    background-position: center;
     padding: 200px 10px;
     margin-left: 0%;
     font-size: 18px;
@@ -221,7 +200,6 @@ nav .fa{
     position: relative;
     margin: 10px;
     margin-top: 10%;
-    margin-left: 15%;
 }    
 .img-slider .slide {
     z-index: 1;
