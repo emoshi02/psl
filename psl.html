@@ -22,15 +22,17 @@
             <li><a href="#">KARJERA</a></li>
             <li><a href="#">PARENGTI DARBAI</a></li>
             <li><a href="#">PASLAUGOS</a></li>
-            <li><a href="#">KONSULTAVIMAS</a></li>
-            <li><a href="#">PLANAVIMAS</a></li>
+            <li><a href="#konsultavimas">KONSULTAVIMAS</a></li>
+            <li><a href="#planavimas">PLANAVIMAS</a></li>
         </ul>
     </div>
     <section class="header">
         <div class="text-box">
             <h1>Statinių Konstrukcijų Projektavimo Darbai</h1>
             <p>Mes sėkmingai vykdome veiklą jau: <br> </p>
-            <p id="timer"></p>
+            <div class="timer">
+                <p id="timer"></p>
+            </div>
             <a href="#apie_imone" class="herro-btn">Apie Įmonę</a>
         </div>
     </section>
@@ -54,24 +56,12 @@
             </div>
         </div>
     </section>
-    <section class="icons">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-            integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-            crossorigin="anonymous"></script>
-        <div class="row">
-            <ul>
-                <li><i class="fas fa-mobile-alt"></i></li>
-                <li><i class="far fa-envelope"></i></li>
-                <li><i class="fas fa-map-marker-alt"></i></li>
-            </ul>
-        </div>
-    </section>
 
     <p style="page-break-after: always;">&nbsp; </p>
     <p style="page-break-before: always;">&nbsp;</p>
 
     <!--tekstas-->
-    <section class="Planuokis">
+    <section class="Planuokis" id = "planavimas">
         <div class="tekstas-1">
             <h1> Planuokite Statybas Iš Anksto! </h1>
             <p>
@@ -89,7 +79,7 @@
 
     <p style="page-break-after: always;">&nbsp;</p>
 
-    <section class="Konsultuokis">
+    <section class="Konsultuokis" id="konsultavimas">
         <div class="eilute-1">
             <div class="tekstas-2">
                 <h1> Konsultuokites Su Konstruktoriumi </h1>
@@ -185,7 +175,22 @@
                 <div class="btn"></div>
             </div>
         </div>
+        
     </section>
+    
+    <section class="icons">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+            integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
+        <div class="row">
+            <ul>
+                <li><i class="fas fa-mobile-alt"></i></li>
+                <li><i class="far fa-envelope"></i></li>
+                <li><i class="fas fa-map-marker-alt"></i></li>
+            </ul>
+        </div>
+    </section>
+    
 
     <!--JavaScript-->
     <script type="text/javascript">
@@ -227,8 +232,8 @@
         var x = setInterval(function () {
             var now = new Date().getTime();
             var distance = now - countDownDate;
-            var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365.25));
-            var days = Math.floor(distance % (1000 * 31557600) / (1000 * 60 * 60 * 24));
+            var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+            var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             //if we want to use them
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -236,10 +241,11 @@
             document.getElementById("timer").innerHTML = years + " m. " + days + " d. " + hours + " v. ";
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
+                document.getElementById("timer").innerHTML = "Are you doing time travel?";
             }
         }, 1000);
     </script>
+    
 </body>
 
 </html>

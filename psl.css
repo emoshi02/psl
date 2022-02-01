@@ -8,10 +8,25 @@
     width: 100%;
     background-image: linear-gradient(rgb(192 198 213), rgb(39 52 98 / 0.70)),url(images/1.png);
     position: inherit;
+    height: 100%;
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.timer p{
+    color: #ffffff !important;;
+    font-size: 36px !important;
+    margin-top: -2% !important;
+}
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -41,10 +56,10 @@ html {
     margin-top: -45px;
 }
 
-    .navbar li a:hover:not(.active) {
-        background-color: #008bff;
-        transition: 0.5s;
-    }
+.navbar li a:hover:not(.active) {
+    background-color: #008bff;
+    transition: 0.5s;
+}
 
 .navbar img{
     width: 260px;
@@ -99,7 +114,7 @@ nav .fa{
 .apie-imone h1{
     font-size: 30px;
     color: #ffffff;
-    text-align: right;
+    text-align: center;
     margin: -7% auto;
     padding-bottom: 10%;
     padding-right: 5%;
@@ -163,7 +178,6 @@ nav .fa{
     margin-right: 5%;
     color: #ffffff;
     line-height: 30px;
-    font-size: 18px;
     padding-top: 1%;
     margin-top: 12%;
 }
@@ -183,7 +197,7 @@ nav .fa{
 .Konsultuokis h1 {
     font-size: 30px;
     color: #ffffff;
-    text-align: right;
+    text-align: center;
     padding-bottom: 3%;
     padding-right: 5%;
     margin-top: -7%;
