@@ -120,7 +120,7 @@ nav .fa{
     padding-right: 5%;
 }
 .eilute {
-    margin-top: 10%;
+    margin-top: 2%;
     display: flex;
 }
 .ivadas-1 {
@@ -128,7 +128,7 @@ nav .fa{
     width: 100%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
     margin-left: 0%;
     font-size: 18px;
     line-height: 30px;
@@ -139,13 +139,19 @@ nav .fa{
     z-index: -1;
     display: block;
 }
+
+.row {
+    text-decoration: none;
+}
+
 .row ul{
+    list-style-type: none;
     text-align: center;
-    margin-top: -100px;
     margin-bottom: 100px;
 }
 
 .row li {
+    list-style-type: none;
     margin: 10px 90px;
     display: inline-block;
     font-size: 30px;
@@ -154,13 +160,37 @@ nav .fa{
     border: 3px solid #008bff;
     background: #ffffff;
     box-shadow: 0 0 5px #333;
-    transition: .5s;
 }
-    .row li:hover {
-        color: #fb801f;
-        border: 3px solid #fb801f;
-        padding: 30px 30px;
-    }
+
+.row p{
+    list-style-type: none;
+    display: none;
+}
+
+.row li:hover p{
+    list-style-type: none;
+    display:block;
+    transform-origin: 100% 0%;
+    text-decoration-line: none;
+}
+
+.row li:hover {
+    list-style-type: none;
+    color: #e24902 !important;
+    border: 3px solid #e24902 !important;
+    padding: 30px 30px;
+    text-decoration: none !important;
+}
+
+.row a:link{
+    text-decoration: none;
+    color:#e24902;
+}
+
+.row p:before {
+	content: '';
+}
+
 .Planuokis {
     width: 100%;
     height: 700px;
@@ -216,6 +246,10 @@ nav .fa{
     float: right;
     position: relative;
     display: block;
+}
+
+.slide-text{
+    z-index: -3;
 }
 .img-slider {
     position: relative;
