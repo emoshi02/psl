@@ -133,9 +133,10 @@ nav .fa{
     margin: -10% auto;
     padding-bottom: 12%;
     padding-right: 5%;
+    padding-top: 5%;
 }
 .eilute {
-    padding-top: 10%;
+    padding-top: 12%;
     margin-top: 0;
     display: flex;
 }
@@ -170,7 +171,7 @@ nav .fa{
         font-size: 18px;
     }
 }
-@media(max-width: 1290px){
+@media(max-width: 4000px){
     .ivadas-2 img {
         width: 700px;
         height: 500px;
@@ -310,7 +311,7 @@ nav .fa{
     text-align: center;
     padding-bottom: 3%;
     padding-right: 5%;
-    margin-top: -7%;
+    margin-top: -5%;
 }
 .tekstas-2 {
     height: 100px;
@@ -341,13 +342,13 @@ nav .fa{
         font-size: 18px;
     }
 }
-@media(max-width: 1290px){
+@media(max-width: 4000px){
     .photo-1{
         width: 700px;
         height: 500px;
     }
     .Konsultuokis h1{
-        margin-top: -25%;
+        margin-top: -3%;
         margin-left: -1%;
     }
     .tekstas-2 {
@@ -416,7 +417,7 @@ nav .fa{
         margin-top: 110%;
     }
 }
-@media(max-width: 1290px){
+@media(max-width: 4000px){
     .dot-container {
         margin-top: 10%;
     }
@@ -424,9 +425,10 @@ nav .fa{
         font-size: 18px;
     }
 }
-@media(max-width: 1290px){
+@media(max-width: 4000px){
 .navigation{
     padding-top: 40%;
+}
 }
 @media(max-width: 1000px){
     .navigation{
@@ -569,7 +571,10 @@ nav .fa{
     text-align: center;
     padding: 20px;
 }
-@media(max-width: 650px) {
+
+
+@media(max-width: 650px) 
+{
     .row2 img{
         width: 550px;
         height: 300px;
