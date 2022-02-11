@@ -155,13 +155,13 @@ nav .fa{
     z-index: 1;
     display: block;
 }
-@media(max-width: 650px){
+@media(max-width: 1000px){
     .ivadas-2 img{
         display: none;
     }
     .eilute{
         margin-top: 0%;
-        padding-top: 27%;
+        padding-top: 20%;
     }
     .apie-imone h1{
         padding-bottom: 13%;
@@ -178,12 +178,6 @@ nav .fa{
     }
     .ivadas-1 {
         font-size: 18px;
-    }
-}
-@media(max-width: 1000px){
-    .ivadas-2 img {
-        width: 500px;
-        height: 500px;
     }
 }
 
@@ -328,7 +322,7 @@ nav .fa{
     position: relative;
     display: block;
 }
-@media(max-width: 650px){
+@media(max-width: 1000px){
     .Konsultuokis{
         padding-top: 28%;
     }
