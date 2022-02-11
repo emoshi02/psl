@@ -354,6 +354,11 @@ nav .fa{
         width: 500px;
         height: 500px;
     }
+    .dot{
+        cursor:pointer;
+        height: 15px;
+        
+    }
 }
 .slide-text {
     margin-top: 0;

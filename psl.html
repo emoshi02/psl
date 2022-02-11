@@ -13,10 +13,11 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="navbar">
         <img src="images/Lengva-sija-Baltas.png">
-        <ul> 
+        <ul>
             <li><a href="#kontaktai">KONTAKTAI</a></li>
             <li><a href="#karjera">KARJERA</a></li>
             <li><a href="#parengti-darbai">PARENGTI DARBAI</a></li>
@@ -99,7 +100,7 @@
                 </p>
             </div>
             <div class="photo-1">
-                <img src="images/shutterstock_1662218761.jpg" height="500" width="900" />
+                <img src="images/shutterstock_1662218761.jpg" height="500" width="100%" />
             </div>
         </div>
     </section>
@@ -165,7 +166,7 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            </div>
+        </div>
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -174,51 +175,29 @@
     </section>
     <section class="parengti-darbai" id="parengti-darbai">
         <div id="myBtnContainer">
-            <button class="button" id="2017"><span>2017</span></button>
-            <button class="button" id="2018"><span>2018</span></button>
-            <button class="button" id="2019"><span>2019</span></button>
-            <button class="button" id="2020"><span>2020</span></button>
-            <button class="button" id="2021"><span>2021</span></button>
+            <button class="button" id="2017" onclick="show_2017()"><span>2017</span></button>
+            <button class="button" id="2018" onclick="show_2018()"><span>2018</span></button>
+            <button class="button" id="2019" onclick="show_2019()"><span>2019</span></button>
+            <button class="button" id="2020" onclick="show_2020()"><span>2020</span></button>
+            <button class="button" id="2021" onclick="show_2021()"><span>2021</span></button>
+        </div>
+        <div class="gif-slider">
+            <div class="col-5" >
+                <img id="gif_place" src="images/2021.gif" />
             </div>
-            <div class="gif-slider">
-                <div class="row1">
-                    <div class="col-1">
-                        <img src="images/2017.gif" />
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="col-2">
-                        <img src="images/2018.gif">
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="col-3">
-                        <img src="images/2019.gif" />
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="col-4">
-                        <img src="images/2020.gif" />
-                    </div>
-                </div>
-                <div class="row1">
-                    <div class="col-5">
-                        <img src="images/2021.gif" />
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
     <section class="karjera" id="karjera">
         <div class="row2">
-            <img src="images/Talk to us.gif"/>
+            <img src="images/Talk to us.gif" />
         </div>
     </section>
 
 
     <section class="icons" id="kontaktai">
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-                integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-                crossorigin="anonymous"></script>
+            integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
         <div class="row">
             <ul>
                 <li>
@@ -237,7 +216,7 @@
         </div>
     </section>
     <section class="bottom">
-            <p>© Lengva sija</p>
+        <p>© Lengva sija</p>
     </section>
 
     <!--JavaScript-->
@@ -312,7 +291,46 @@
         }, 1000);
     </script>
     <script>
-       
+        function show_2017() {
+            document.getElementById("gif_place").src="images/2017.gif";
+            document.getElementById("2017").style.backgroundColor="#e24902";
+            document.getElementById("2018").style.backgroundColor="#008bff";
+            document.getElementById("2019").style.backgroundColor="#008bff";
+            document.getElementById("2020").style.backgroundColor="#008bff";
+            document.getElementById("2021").style.backgroundColor="#008bff";
+        }
+        function show_2018() {
+            document.getElementById("gif_place").src="images/2018.gif";
+            document.getElementById("2017").style.backgroundColor="#008bff";
+            document.getElementById("2018").style.backgroundColor="#e24902";
+            document.getElementById("2019").style.backgroundColor="#008bff";
+            document.getElementById("2020").style.backgroundColor="#008bff";
+            document.getElementById("2021").style.backgroundColor="#008bff";
+        }
+        function show_2019() {
+            document.getElementById("gif_place").src="images/2019.gif";
+            document.getElementById("2017").style.backgroundColor="#008bff";
+            document.getElementById("2018").style.backgroundColor="#008bff";
+            document.getElementById("2019").style.backgroundColor="#e24902";
+            document.getElementById("2020").style.backgroundColor="#008bff";
+            document.getElementById("2021").style.backgroundColor="#008bff";
+        }
+        function show_2020() {
+            document.getElementById("gif_place").src="images/2020.gif";
+            document.getElementById("2017").style.backgroundColor="#008bff";
+            document.getElementById("2018").style.backgroundColor="#008bff";
+            document.getElementById("2019").style.backgroundColor="#008bff";
+            document.getElementById("2020").style.backgroundColor="#e24902";
+            document.getElementById("2021").style.backgroundColor="#008bff";
+        }
+        function show_2021() {
+            document.getElementById("gif_place").src="images/2021.gif";
+            document.getElementById("2017").style.backgroundColor="#008bff";
+            document.getElementById("2018").style.backgroundColor="#008bff";
+            document.getElementById("2019").style.backgroundColor="#008bff";
+            document.getElementById("2020").style.backgroundColor="#008bff";
+            document.getElementById("2021").style.backgroundColor="#e24902";
+        }
     </script>
 </body>
 
