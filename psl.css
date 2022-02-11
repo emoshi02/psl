@@ -107,8 +107,17 @@ nav .fa{
 
 @media screen and (max-width: 1130px){
     .navbar {
+        position: fixed;
+    }
+    .navbar img {
+        width: 120px;
+        height: 25px;
+        z-index: 2;
+    }
+    .navbar li{
         display: none;
     }
+
 }
 .apie-imone {
     min-height: 100vh;
@@ -121,8 +130,8 @@ nav .fa{
     font-size: 30px;
     color: #ffffff;
     text-align: center;
-    margin: -7% auto;
-    padding-bottom: 10%;
+    margin: -10% auto;
+    padding-bottom: 12%;
     padding-right: 5%;
 }
 .eilute {
@@ -135,9 +144,8 @@ nav .fa{
     width: 100%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
-    margin-bottom: 0%;
     margin-left: 0%;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #ffffff;
 }
@@ -146,16 +154,49 @@ nav .fa{
     z-index: 1;
     display: block;
 }
+@media(max-width: 650px){
+    .ivadas-2 img{
+        display: none;
+    }
+    .eilute{
+        margin-top: 0%;
+        padding-top: 27%;
+    }
+    .apie-imone h1{
+        padding-bottom: 13%;
+        margin-top: -25%;
+    }
+    .ivadas-1{
+        font-size: 18px;
+    }
+}
+@media(max-width: 1290px){
+    .ivadas-2 img {
+        width: 700px;
+        height: 500px;
+    }
+    .ivadas-1 {
+        font-size: 18px;
+    }
+}
+@media(max-width: 1000px){
+    .ivadas-2 img {
+        width: 500px;
+        height: 500px;
+    }
+}
 
 .row {
-    min-height: 100vh;
+    min-height: auto;
+    bottom: 0;
     width: 100%;
-    background-image: linear-gradient(#ffffff, rgb(39 52 98 / 0.90)),url(images/1.png);
+    background-color: #ffffff;
     position: inherit;
     height: 100%;
     position: relative;
     text-decoration: none;
     z-index: 2;
+    margin-bottom: 0;
 }
 
 .row ul{
@@ -177,7 +218,7 @@ nav .fa{
 }
 
 .row p{
-    font-size: 18px;
+    font-size: 20px;
     list-style-type: none;
     display: none;
 }
@@ -212,7 +253,7 @@ nav .fa{
     background-position: center bottom;
     background-size: cover;
     display: inline-block;
-    margin-top: -3%;
+    margin-top: -2.75%;
 }
 .tekstas-1 h1 {
     text-align: center;
@@ -231,8 +272,25 @@ nav .fa{
     margin-right: 5%;
     color: #ffffff;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 1%;
+}
+@media(max-width: 650px){
+    .Planuokis{
+        margin-top: -10%;
+    }
+    .tekstas-1 h1{
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 40%;
+        margin-bottom: -18%;
+    }
+    .tekstas-1 p{
+        padding-top: 20%;
+        margin-left: 2%;
+        font-size: 18px;
+        margin-right: 2%;
+    }
 }
 .eilute-1 {
     display: flex;
@@ -260,7 +318,7 @@ nav .fa{
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
     margin-left: 0%;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #ffffff;
 }
@@ -268,6 +326,39 @@ nav .fa{
     float: right;
     position: relative;
     display: block;
+}
+@media(max-width: 650px){
+    .Konsultuokis{
+        padding-top: 28%;
+    }
+    .photo-1{
+        display: none;
+    }
+    .Konsultuokis h1{
+        margin-top: -35%;
+    }
+    .tekstas-2{
+        font-size: 18px;
+    }
+}
+@media(max-width: 1290px){
+    .photo-1{
+        width: 700px;
+        height: 500px;
+    }
+    .Konsultuokis h1{
+        margin-top: -25%;
+        margin-left: -1%;
+    }
+    .tekstas-2 {
+        font-size: 18px;
+    }
+}
+@media(max-width: 1000px){
+    .photo-1{
+        width: 500px;
+        height: 500px;
+    }
 }
 .slide-text {
     margin-top: 0;
@@ -294,14 +385,53 @@ nav .fa{
     margin-top: 17%;
 }
 .tekstas-3 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #ffffff;
     padding: 70px;
     padding-top: 1%;
 }
+@media(max-width: 650px){
+    .tekstas-3 h1{
+        margin-top: 20%;
+        padding-top: 20px;
+        margin-left: 12px;
+    }
+    .tekstas-3 p{
+        margin-top: 2%;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .navigation .prev, .next{
+        margin-top: 110%;
+    }
+    .prev{
+        margin-top: 110%;
+    }
+    .next{
+        margin-top: 110%;
+    }
+    .dot-container{
+        margin-top: 110%;
+    }
+}
+@media(max-width: 1290px){
+    .dot-container {
+        margin-top: 10%;
+    }
+    .tekstas-3{
+        font-size: 18px;
+    }
+}
+@media(max-width: 1290px){
 .navigation{
     padding-top: 40%;
+}
+@media(max-width: 1000px){
+    .navigation{
+        padding-top: 60%;
+    }
 }
  .navigation .prev, .next{
     cursor: pointer;
@@ -353,7 +483,7 @@ nav .fa{
     border: none;
     color: #ffffff;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     padding: 10px 15px;
     width: 200px;
     transition: all 0.5s;
@@ -392,7 +522,7 @@ nav .fa{
     min-height: 100vh;
     width: 100%;
 }
-.slider {
+.gif-slider {
     position: relative;
     z-index: 1;
 }
@@ -407,5 +537,54 @@ nav .fa{
 .row1 img{
     width: 900px;
     height: 500px;
-    
+}
+@media(max-width: 650px){
+    .button {
+        margin-top: 10%;
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .row1 img {
+        width: 600px;
+        height: 370px;
+        margin-left: -15%;
+        margin-top: 10%;
+    }
+}
+.karjera{
+    background-color: #ffffff;
+    text-align: center;
+}
+.row2 img {
+    width: 850px;
+    height: 450px;
+}
+.bottom{
+    background-color: rgb(15 28 72 / 0.80);
+    bottom: 0;
+}
+.bottom p{
+    color: rgb(255 255 255 / 0.50);
+    text-align: center;
+    padding: 20px;
+}
+@media(max-width: 650px) {
+    .row2 img{
+        width: 550px;
+        height: 300px;
+        margin-left: -10%;
+    }
+    .row li{
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+    .row p{
+        font-size: 15px;
+    }
+    .bottom p{
+        font-size: 15px;
+    }
 }
