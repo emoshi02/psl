@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statinių konstrukcijų projektavimo darbai</title>
+    <title>Individualių namų konstrukcijų projektavimo darbai</title>
     <link rel="stylesheet" href="psl.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 
 <body>
     <div class="navbar">
-        <img src="images/Lengva-sija-Baltas.png">
+        <a href="#pradzia"><img src="images/Lengva-sija-Baltas.png"></a>
         <ul>
             <li><a href="#kontaktai">KONTAKTAI</a></li>
             <li><a href="#karjera">KARJERA</a></li>
@@ -27,9 +27,9 @@
             <li><a href="#apie_imone">APIE</a></li>
         </ul>
     </div>
-    <section class="header">
+    <section class="header" id="pradzia">
         <div class="text-box">
-            <h1>Statinių Konstrukcijų Projektavimo Darbai</h1>
+            <h1>Individualių Namų Konstrukcijų Projektavimo Darbai</h1>
             <p>Mes sėkmingai vykdome veiklą jau: <br> </p>
             <div class="timer">
                 <p id="timer"></p>
@@ -70,8 +70,8 @@
             <p>
                 Žinoma, svarbu iš anksto įsivaizduoti planuojamos statybos biudžetą.
                 Patyrę statybininkai skaičiuoja sąmatas ir pateikia savo pasiūlymus.
-                Turint po ranka konstrukcinės dalies projektą, tiek rangovams tiek ir Užsakovui paprasčiau ne tik
-                įvertinti statybos sąmatą
+                Turint po ranka konstrukcinės dalies projektą, tiek rangovams, tiek ir Užsakovui paprasčiau ne tik
+                įvertinti statybos sąmatą,
                 bet ir apibrėžti technologinio proceso sudėtingumą, jo kiekį ir kainą. Be to, priduodant pastatytą
                 statinį,
                 yra privaloma pateikti darbo projektą, todėl konstrukcinė dalis yra neatsiejama projekto dalis, kuria
@@ -95,8 +95,6 @@
                     keramikiniai, silikatiniai),
                     fasado įrengimo sistemos panaudojimą projekte (gali būti tinkuojamas/vėdinamas), stogo dangos tipą
                     (skarda/čerpės).<br />
-                    <!--Naujos statybos technologijos bei inovacijos, skatina nuolatos domėtis, tobulėti ir rinktis efektyviausius statybos elementus
-                    projektuojant statinius.-->
                 </p>
             </div>
             <div class="photo-1">
@@ -115,7 +113,7 @@
                     Grafinėje dalyje atvaizduojami visi pagrindiniai technologiniai statybos etapai
                     (pamatų, sienų, stogo planai), pateikiami kiekių žiniaraščiai, nurodomi gelžbetoninių elementų
                     armavimo pjūviai,
-                    detalizuojamos metalo konstrukcijos projekte, pateikiamos sienų išklotinės, išsprendžiami
+                    detalizuojamos metalo konstrukcijos, pateikiamos sienų išklotinės, išsprendžiami
                     pagrindiniai atitvarų šiltinimo mazgai,
                     nurodant šilumos perdavimo koeficientų projektuojamasias reikšmes.
                     <br /><br />
@@ -136,7 +134,7 @@
                     įsipareigojimai apie šiltnamio efektą sukeliančių dujų emesijų sumažinimą,
                     nustatomi nacionaliniai privalomi CO2 kiekio mažinimo tikslai, kurių siekiant itin svarbus
                     energijos vartojimo efektyvumas pastatų sektoriuje.
-                    Pastato energinis vertinimas parodo kiek pastatas suvartoja energijos.
+                    Pastato energinis vertinimas parodo, kiek pastatas suvartoja energijos.
                     Tokio projekto pagrindinis tiklas – parengti ir įvertinti projektuojamo pastato atitiktį
                     energinio naudingumo klasės (A, A+, A++) reikalavimams ir pateikti skaičiavimo rezultatus.
                     Energinio vertinimo dalį projekto vadovas pateikia projekto bendroje dalyje.
@@ -273,7 +271,7 @@
     </script>
     <!--clock-->
     <script>
-        var countDownDate = new Date("Feb 17, 2017 9:00:00").getTime();
+        var countDownDate = new Date("Feb 14, 2017 9:00:00").getTime();
         var x = setInterval(function () {
             var now = new Date().getTime();
             var distance = now - countDownDate;
@@ -283,7 +281,7 @@
             //if we want to use them
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("timer").innerHTML = years + " m. " + days + " d. " + hours + " v. ";
+            document.getElementById("timer").innerHTML = years + " m. " + days + " d. " + hours + " val. ";
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("timer").innerHTML = "Are you doing time travel?";

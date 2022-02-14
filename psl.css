@@ -165,7 +165,7 @@ nav .fa{
     }
     .apie-imone h1{
         padding-bottom: 13%;
-        margin-top: -25%;
+        margin-top: -17%;
     }
     .ivadas-1{
         font-size: 18px;
@@ -309,7 +309,7 @@ nav .fa{
 }
 .tekstas-2 {
     height: 100px;
-    width: 100%;
+    width: 60%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
     margin-left: 0%;
@@ -324,16 +324,19 @@ nav .fa{
 }
 @media(max-width: 1000px){
     .Konsultuokis{
-        padding-top: 28%;
+        margin-top: 0%;
     }
     .photo-1{
         display: none;
     }
     .Konsultuokis h1{
-        margin-top: -35%;
+        padding-bottom: 2%;
+        margin-left: 2%;
     }
     .tekstas-2{
-        font-size: 18px;
+        padding-bottom: 70%;
+        font-size: 15px;
+        width: 100%;
     }
 }
 @media(max-width: 4000px){
@@ -342,8 +345,9 @@ nav .fa{
         height: 500px;
     }
     .Konsultuokis h1{
-        margin-top: -3%;
+        margin-top: -5%;
         margin-left: -1%;
+        font-size: 30px;
     }
     .tekstas-2 {
         font-size: 18px;
@@ -353,11 +357,6 @@ nav .fa{
     .photo-1{
         width: 500px;
         height: 500px;
-    }
-    .dot{
-        cursor:pointer;
-        height: 15px;
-        
     }
 }
 .slide-text {
@@ -391,8 +390,9 @@ nav .fa{
     padding: 70px;
     padding-top: 1%;
 }
-@media(max-width: 650px){
+@media(max-width: 1000px){
     .tekstas-3 h1{
+        text-align: center;
         margin-top: 20%;
         padding-top: 20px;
         margin-left: 12px;
@@ -404,16 +404,19 @@ nav .fa{
         padding: 10px;
     }
     .navigation .prev, .next{
-        margin-top: 110%;
+        
     }
     .prev{
-        margin-top: 110%;
+        position: absolute;
+        margin-top: 20%;
     }
     .next{
-        margin-top: 110%;
+        position: absolute;
+        margin-top: 20%;
     }
-    .dot-container{
-        margin-top: 110%;
+    .dot-container dot{
+        position: fixed;
+        padding-top: 100%;
     }
 }
 @media(max-width: 4000px){
@@ -443,7 +446,7 @@ nav .fa{
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
+ }
  .prev{
      position: absolute;
      margin-top: -17%;
@@ -461,6 +464,7 @@ nav .fa{
 }
 .dot-container {
     position: relative;
+    margin-bottom: 10%;
     text-align: center;
     padding: 20px;
     background: rgb(4 20 74 / 0.10);
@@ -523,39 +527,32 @@ nav .fa{
     min-height: 100vh;
     width: 100%;
 }
-.gif-slider {
+.gif-slider img {
     position: relative;
     z-index: 1;
-}
-.row1 {
-    position: absolute;
+    width: 850px;
+    height: 500px;
     text-align: center;
-    margin: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
+    left: 0%;
 }
-.row1 img{
-    width: 100px;
-    height: 100px;
-}
-@media(max-width: 650px){
+
+@media(max-width: 1000px){
     .button {
         margin-top: 10%;
         font-size: 15px;
         width: 100px;
     }
-
-    .row1 img {
-        width: 600px;
-        height: 370px;
-        margin-left: -15%;
-        margin-top: 10%;
+    .gif-slider img{
+        position: relative;
+        width: 550px;
+        height: 300px;
+        text-align: center;
     }
 }
 .karjera{
     background-color: #ffffff;
     text-align: center;
+    position: relative;
 }
 .row2 img {
     width: 650px;
@@ -572,12 +569,11 @@ nav .fa{
 }
 
 
-@media(max-width: 650px) 
+@media(max-width: 1000px) 
 {
     .row2 img{
         width: 550px;
         height: 300px;
-        margin-left: -10%;
     }
     .row li{
         margin-right: 5%;
