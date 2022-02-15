@@ -496,6 +496,11 @@ nav .fa{
     cursor: pointer;
     margin: 10px;
 }
+
+.dunulisduvienas{
+    background-color: #ff0000;
+}
+
 .button span {
     cursor: pointer;
     display: inline-block;
