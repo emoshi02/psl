@@ -463,13 +463,14 @@ nav .fa{
     color: white;
 }
 .dot-container {
-    position: relative;
-    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 20px;
     background: rgb(4 20 74 / 0.10);
 }
 .dot {
+	position: sticky;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -530,8 +531,8 @@ nav .fa{
 .gif-slider img {
     position: relative;
     z-index: 1;
-    width: 850px;
-    height: 500px;
+    width: 80%;
+    height: auto;
     text-align: center;
     left: 0%;
 }
@@ -542,12 +543,6 @@ nav .fa{
         font-size: 15px;
         width: 100px;
     }
-    .gif-slider img{
-        position: relative;
-        width: 550px;
-        height: 300px;
-        text-align: center;
-    }
 }
 .karjera{
     background-color: #ffffff;
@@ -555,8 +550,8 @@ nav .fa{
     position: relative;
 }
 .row2 img {
-    width: 650px;
-    height: 350px;
+    max-width: 80%;
+    height: auto;
 }
 .bottom{
     background-color: rgb(15 28 72 / 0.80);
