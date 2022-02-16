@@ -309,7 +309,7 @@ nav .fa{
 }
 .tekstas-2 {
     height: 100px;
-    width: 60%;
+    width: 100%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
     margin-left: 0%;
@@ -321,6 +321,7 @@ nav .fa{
     float: right;
     position: relative;
     display: block;
+    width: 700px !important;
 }
 @media(max-width: 1000px){
     .Konsultuokis{
@@ -403,9 +404,6 @@ nav .fa{
         line-height: 20px;
         padding: 10px;
     }
-    .navigation .prev, .next{
-        
-    }
     .prev{
         position: absolute;
         margin-top: 20%;
@@ -414,8 +412,15 @@ nav .fa{
         position: absolute;
         margin-top: 20%;
     }
+    .dot-container dot{
+        position: fixed;
+        padding-top: 100%;
+    }
 }
 @media(max-width: 4000px){
+    .dot-container {
+        margin-top: 10%;
+    }
     .tekstas-3{
         font-size: 18px;
     }
@@ -427,10 +432,7 @@ nav .fa{
 }
 @media(max-width: 1000px){
     .navigation{
-        bottom: 0;
-    }
-    .dot-container{
-        display: none;
+        padding-top: 60%;
     }
 }
  .navigation .prev, .next{
@@ -458,13 +460,15 @@ nav .fa{
     background-color: rgb(0 146 255 / 0.80);
     color: white;
 }
-.dot-container { 
-    margin-top: 6%;
+.dot-container {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 20px;
     background: rgb(4 20 74 / 0.10);
 }
-.dot {   
+.dot {
+	position: sticky;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -526,7 +530,7 @@ nav .fa{
 .gif-slider img {
     position: relative;
     z-index: 1;
-    width: 70%;
+    width: 80%;
     height: auto;
     text-align: center;
     left: 0%;
@@ -545,7 +549,7 @@ nav .fa{
     position: relative;
 }
 .row2 img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
 }
 .bottom{
