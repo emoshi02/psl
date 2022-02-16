@@ -414,15 +414,8 @@ nav .fa{
         position: absolute;
         margin-top: 20%;
     }
-    .dot-container dot{
-        position: fixed;
-        padding-top: 100%;
-    }
 }
 @media(max-width: 4000px){
-    .dot-container {
-        margin-top: 10%;
-    }
     .tekstas-3{
         font-size: 18px;
     }
@@ -434,7 +427,10 @@ nav .fa{
 }
 @media(max-width: 1000px){
     .navigation{
-        padding-top: 60%;
+        bottom: 0;
+    }
+    .dot-container{
+        display: none;
     }
 }
  .navigation .prev, .next{
@@ -462,15 +458,13 @@ nav .fa{
     background-color: rgb(0 146 255 / 0.80);
     color: white;
 }
-.dot-container {
-    display: flex;
-    justify-content: center;
+.dot-container { 
+    margin-top: 6%;
     text-align: center;
     padding: 20px;
     background: rgb(4 20 74 / 0.10);
 }
-.dot {
-	position: sticky;
+.dot {   
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -495,10 +489,6 @@ nav .fa{
     transition: all 0.5s;
     cursor: pointer;
     margin: 10px;
-}
-
-.dunulisduvienas{
-    background-color: #ff0000;
 }
 
 .button span {
@@ -536,7 +526,7 @@ nav .fa{
 .gif-slider img {
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 70%;
     height: auto;
     text-align: center;
     left: 0%;
@@ -555,7 +545,7 @@ nav .fa{
     position: relative;
 }
 .row2 img {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
 }
 .bottom{
