@@ -309,7 +309,7 @@ nav .fa{
 }
 .tekstas-2 {
     height: 100px;
-    width: 100%;
+    width: 60%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
     margin-left: 0%;
@@ -342,7 +342,7 @@ nav .fa{
 }
 @media(max-width: 4000px){
     .photo-1{
-        width: 700px;
+        width: 30%;
         height: 500px;
     }
     .Konsultuokis h1{
@@ -356,17 +356,14 @@ nav .fa{
 }
 @media(max-width: 1000px){
     .photo-1{
-        width: 500px;
+        width: 30%;
         height: 500px;
     }
 }
 .slide-text {
-    margin-top: 0;
-    min-height: 100vh;
-    width: 100%;
+    margin:auto;
     background-image: linear-gradient(#ffffff, rgb(39 52 98 / 0.90)),url(images/1.png);
-    position: inherit;
-    height: 100%;
+    position: relative;
 }
 .img-slider {
     position: relative;
@@ -415,6 +412,7 @@ nav .fa{
     .dot-container dot{
         position: fixed;
         padding-top: 100%;
+        width:device-width;
     }
 }
 @media(max-width: 4000px){
@@ -426,9 +424,9 @@ nav .fa{
     }
 }
 @media(max-width: 4000px){
-.navigation{
-    padding-top: 40%;
-}
+    .navigation{
+        padding-top: 40%;
+    }
 }
 @media(max-width: 1000px){
     .navigation{
@@ -466,6 +464,7 @@ nav .fa{
     text-align: center;
     padding: 20px;
     background: rgb(4 20 74 / 0.10);
+    height: auto;
 }
 .dot {
 	position: sticky;
@@ -541,6 +540,16 @@ nav .fa{
         margin-top: 10%;
         font-size: 15px;
         width: 100px;
+    }
+}
+@media(max-width: 700px){
+    .dot-container{
+        padding-top: 60%;
+    }
+}
+@media(max-width: 500px){
+    .dot-container{
+        padding-top: 800px;
     }
 }
 .karjera{
