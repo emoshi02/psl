@@ -529,7 +529,7 @@ nav .fa{
 .gif-slider img {
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 70%;
     height: auto;
     text-align: center;
     left: 0%;
@@ -558,7 +558,7 @@ nav .fa{
     position: relative;
 }
 .row2 img {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
 }
 .bottom{
