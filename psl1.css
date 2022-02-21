@@ -309,7 +309,7 @@ nav .fa{
 }
 .tekstas-2 {
     height: 100px;
-    width: 60%;
+    width: 100%;
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
     margin-left: 0%;
@@ -321,7 +321,7 @@ nav .fa{
     float: right;
     position: relative;
     display: block;
-    width: 700px !important;
+    width: 40%;
 }
 @media(max-width: 1000px){
     .Konsultuokis{
@@ -342,7 +342,7 @@ nav .fa{
 }
 @media(max-width: 4000px){
     .photo-1{
-        width: 30%;
+        width: 40%;
         height: 500px;
     }
     .Konsultuokis h1{
