@@ -17,7 +17,7 @@
 }
 
 .timer p{
-    color: #ffffff !important;;
+    color: #ffffff !important;
     font-size: 36px !important;
     margin-top: -2% !important;
 }
@@ -313,7 +313,6 @@ nav .fa{
     background-image: linear-gradient(rgb(50 115 236 / 0.32), rgb(15 28 72 / 0.70));
     padding: 200px 10px;
     margin-left: 0%;
-    font-size: 20px;
     line-height: 30px;
     color: #ffffff;
 }
@@ -325,6 +324,7 @@ nav .fa{
 }
 @media(max-width: 1000px){
     .Konsultuokis{
+        padding-top: 0%;
         margin-top: 0%;
     }
     .photo-1{
@@ -334,10 +334,8 @@ nav .fa{
         padding-bottom: 2%;
         margin-left: 2%;
     }
-    .tekstas-2{
-        padding-bottom: 70%;
-        font-size: 15px;
-        width: 100%;
+    .eilute-1{
+        padding-top: 20%;
     }
 }
 @media(max-width: 4000px){
@@ -348,7 +346,6 @@ nav .fa{
     .Konsultuokis h1{
         margin-top: -5%;
         margin-left: -1%;
-        font-size: 30px;
     }
     .tekstas-2 {
         font-size: 18px;
@@ -358,6 +355,14 @@ nav .fa{
     .photo-1{
         width: 30%;
         height: 500px;
+    }
+    .tekstas-2 p{
+        padding-bottom: 20%;
+    }
+}
+@media(max-width: 650px){
+    .tekstas-2 h1{
+        margin-top: -35%;
     }
 }
 .slide-text {
@@ -401,14 +406,6 @@ nav .fa{
         line-height: 20px;
         padding: 10px;
     }
-    .prev{
-        position: absolute;
-        margin-top: 20%;
-    }
-    .next{
-        position: absolute;
-        margin-top: 20%;
-    }
     .dot-container dot{
         position: fixed;
         padding-top: 100%;
@@ -428,12 +425,20 @@ nav .fa{
         padding-top: 40%;
     }
 }
-@media(max-width: 1000px){
+@media(max-width: 1100px) {
     .navigation{
         padding-top: 60%;
     }
 }
- .navigation .prev, .next{
+@media(max-width: 650px){
+    .navigation{
+        padding-top: 40%;
+    }
+    .navigation .prev, .next {
+        margin-top: -17%;
+    }
+}
+.navigation .prev, .next {
     cursor: pointer;
     width: auto;
     padding: 16px;
@@ -442,11 +447,12 @@ nav .fa{
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
- }
- .prev{
-     position: absolute;
-     margin-top: -17%;
- }
+}
+
+.prev {
+    position: absolute;
+    margin-top: -17%;
+}
 
 .next {
     position: absolute;
@@ -458,6 +464,7 @@ nav .fa{
     background-color: rgb(0 146 255 / 0.80);
     color: white;
 }
+
 .dot-container {
     display: flex;
     justify-content: center;
@@ -466,8 +473,9 @@ nav .fa{
     background: rgb(4 20 74 / 0.10);
     height: auto;
 }
+
 .dot {
-	position: sticky;
+    position: sticky;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -499,8 +507,8 @@ nav .fa{
     display: inline-block;
     position: relative;
     transition: 0.5s;
-
 }
+
 .button span:after {
     content: '\00bb';
     position: absolute;
@@ -518,6 +526,7 @@ nav .fa{
     opacity: 1;
     right: 0;
 }
+
 .parengti-darbai {
     text-align: center;
     background-color: white;
@@ -526,6 +535,7 @@ nav .fa{
     min-height: 100vh;
     width: 100%;
 }
+
 .gif-slider img {
     position: relative;
     z-index: 1;
@@ -535,59 +545,67 @@ nav .fa{
     left: 0%;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1000px) {
     .button {
         margin-top: 10%;
         font-size: 15px;
         width: 100px;
     }
 }
-@media(max-width: 700px){
-    .dot-container{
+
+@media(max-width: 700px) {
+    .dot-container {
         padding-top: 60%;
     }
 }
-@media(max-width: 500px){
-    .dot-container{
+
+@media(max-width: 500px) {
+    .dot-container {
         padding-top: 800px;
     }
 }
-.karjera{
+
+.karjera {
     background-color: #ffffff;
     text-align: center;
     position: relative;
 }
+
 .row2 img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
 }
-.bottom{
+
+.bottom {
     background-color: rgb(15 28 72 / 0.80);
     bottom: 0;
 }
-.bottom p{
-    color: rgb(255 255 255 / 0.50);
-    text-align: center;
-    padding: 20px;
-}
 
-
-@media(max-width: 1000px) 
-{
-    .row2 img{
-        width: 550px;
-        height: 300px;
+    .bottom p {
+        color: rgb(255 255 255 / 0.50);
+        text-align: center;
+        padding: 20px;
     }
-    .row li{
+
+
+@media(max-width: 1000px) {
+    .row2 img {
+        width: 700px;
+        height: auto;
+    }
+
+    .row li {
         margin-right: 5%;
         margin-left: 5%;
         padding: 10px 10px;
         font-size: 18px;
     }
-    .row p{
+
+    .row p {
         font-size: 15px;
     }
-    .bottom p{
+
+    .bottom p {
         font-size: 15px;
     }
 }
